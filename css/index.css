@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* member1 배경색 */
+body.member1 {
+  background-color: #4cc9f3;
+}
+body.member2 {
+  background-color: #85e77a;
+}
+body.member3 {
+  background-color: #df7bec;
+}
+body.member4 {
+  background-color: #b34eee;
+}
+
+/* 프로필카드 전체영역 */
+section {
+  width: 390px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 상단 메뉴 */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu a {
+  color: #aaa;
+  font-size: 20px;
+}
+
+/* 프로필 영역 */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 10px;
+}
+/* 이미지 */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  box-shadow: 5px 15px 30px rgb(72, 212, 84, 0.5);
+  overflow: hidden;
+}
+body.member2 .profile-img {
+  box-shadow: 5px 15px 30px rgba(212, 72, 200, 0.5);
+}
+.profile-img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.profile-img:hover img {
+  transform: scale(1, 1);
+  cursor: pointer;
+}
+/* 이름 */
+.profile-text h1 {
+  font-size: 22px;
+  color: #555;
+  text-transform: uppercase;
+}
+.profile-text p {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+/* 더보기 버튼 */
+.btn-view {
+  /* width: 180px; */
+  color: #f7f7f7;
+  padding: 8px 20px;
+  border-radius: 24px;
+  background: linear-gradient(45feg, #10fcf0, #7592fc);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+body .member2 .btn-view {
+  color: royalblue;
+}
+
+/* 연락처 영역 */
+.link-contact {
+  padding: 30px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact li {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.contact li:last-child {
+  border: none;
+}
+.contact li i {
+  font-size: 14px;
+  color: #555;
+  color: #777;
+  text-shadow: 2px 2px 2px #ddd;
+}
+
+.contact li span {
+  font-family: "Poiret One", sans-serif;
+  font-size: 12px;
+}
+/* 멤버별 프로필 링크 만들기 */
+.others {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.others a {
+  width: 30px;
+  height: 30px;
+  background-color: #e8a9f3;
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+.others a:nth-of-type(1) {
+  background-color: #35e0f7;
+}
+.others a:nth-of-type(2) {
+  background-color: #55f5cd;
+}
+.others a:nth-of-type(3) {
+  background-color: #ff80df;
+}
+.others a:nth-of-type(4) {
+  background-color: #a794fd;
+}
+/*  */
+
+.others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
+
